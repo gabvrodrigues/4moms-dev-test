@@ -1,7 +1,7 @@
 # X-Team Development Test (4moms)
 This project is a 4moms's homepage clone developed using just HMTL and CSS - based on a [flexbox](https://www.w3schools.com/css/css3_flexbox.asp), with no frameworks. The work preview can be accessed on the link below:
 
-##[Work Preview](https://gabvrodrigues.github.io/4moms-dev-test/)
+## [Work Preview](https://gabvrodrigues.github.io/4moms-dev-test/)
 <img src="./img/work-preview.png">
 
 ## To develop
