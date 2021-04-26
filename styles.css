@@ -1,0 +1,402 @@
+body {
+    margin: 0;
+}
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ .nav-header {
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: #000;
+    padding: 40px 30px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    background-color: #fff;
+    height: 600px;
+  }
+  .column.left{
+    width: 33.3%;
+  }
+  
+  .column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .column a:hover {
+    background-color: #ddd;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.header-left {
+    display: flex;
+    width: 40%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header-right {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header-right>i {
+    cursor: pointer;
+    padding: 20px;
+}
+
+.alert-offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    height: 40px;
+}
+
+.main-content {
+    height: 620px;
+    background-color: #E9E9E9;
+    display: flex;
+    align-items: center;
+}
+.main-content > img{
+    margin-left: 15vw;
+}
+
+.content-right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 12vw;
+    flex-direction: column;
+}
+.content-right > span{
+    font-size: 40px;
+}
+.content-right > p{
+    text-align: end;
+    width: 50%;
+    color: #636363;
+    margin-bottom: 50px;
+}
+.for-moms-btn {
+    padding: 15px 80px;
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+.benefits {
+    display: flex;
+}
+.benefit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    margin: 60px;
+}
+.benefit > img{
+    height: 60px;
+}
+.benefit > h3{
+    color: #222222;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.benefit > span{
+    width: 200px;
+    text-align:center;
+    color: #636363
+}
+
+.products {
+    display: flex;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+.product {
+    height: 530px;
+    background: #F2F2F2;
+    width: 49%;
+    padding: 30px;
+    cursor: pointer;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-title {
+    display: flex;
+    align-items: center;
+}
+.product-title > span {
+    margin-right: 20px;
+    font-size: 20px;
+}
+.product-image {
+    display: flex;
+    justify-content: center;
+}
+.product-example {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 60px;
+    position: relative;
+}
+.product-example-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+.product-example-left > span {
+    margin-top: 40px
+}
+.product-example-left > p {
+    width: 220px;
+    color: #636363;
+    margin-bottom: 50px
+}
+.image-left {
+    background-image: url("./img/baby02.png");
+    margin-right: 20px;
+    width: 40%;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+.image-right {
+    background-image: url("./img/baby03.png");
+    width: 60%;
+    background-position: center;
+    background-size: cover;
+}
+.half-page {
+    background-image: url("./img/baby01.png");
+    width: 50%;
+}
+.product-example .product-details {
+    width: 460px;
+    height: 310px;
+    position: absolute;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    top: 25%;
+    left: 25%;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.product-details > p {
+    width: 200px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #636363;
+}
+.for-moms-btn-rounded {
+    background: #000;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 0;
+    cursor: pointer;
+}
+.evaluations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 415px;
+    margin-bottom: 80px;
+}
+.evaluation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    background-color: #FAFAFA;
+    margin: 0 30px;
+    height: 100%;
+}
+.evaluation > p {
+    text-align: center;
+    color: #636363;
+    font-size: 18px;
+    width: 70%;
+}
+.community {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.content-title {
+    color: #222222;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.community-images {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.images-right {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-left: 20px;
+}
+.images-right > img {
+    margin: 5px
+}
+
+.donations {
+    height: 500px;
+    background: #F2F2F2;
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+.donations > p {
+    width: 40%;
+    text-align: center;
+    color: #636363;
+}
+.donations > button {
+    width: 20%;
+}
+.donations-info {
+    width: 100%;
+}
+.badges {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.badges > img {
+    margin: 30px;
+}
+footer {
+    background: #000;
+    height: 500px;
+    color: #fff;
+    padding: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+.footer-menu-title {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.footer-menu-item{
+    margin-bottom: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+.company-info {
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.for-moms-input{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #fff;
+    background: transparent;
+    color: #fff;
+    width: 280px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.for-moms-btn-secondary {
+    background: transparent;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+.social-accounts {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.social-accounts > a {
+    margin: 10px
+}
+.copyright {
+    font-size: 12px;
+}
+.copyright a {
+    color: #fff;
+    margin-right: 10px;
+}
+
